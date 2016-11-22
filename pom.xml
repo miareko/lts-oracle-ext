@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.github.bitornot.lts</groupId>
+	<artifactId>lts-oradcle-ext</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+	<name>LTS ORACLE EXTENSION</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
+		<druid.version>1.0.13</druid.version>
+		<lts.version>1.6.9</lts.version>
+        <javassist.version>3.20.0-GA</javassist.version>
+        <zkclient.version>0.1</zkclient.version>
+        <netty.version>4.0.20.Final</netty.version>
+        <mapdb.version>2.0-beta10</mapdb.version>
+        <log4j.version>1.2.17</log4j.version>
+        <fastjson.version>1.2.15</fastjson.version>
+        <commons.pool2.version>2.4.2</commons.pool2.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+            <groupId>com.github.ltsopensource</groupId>
+            <artifactId>lts</artifactId>
+            <version>${lts.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-pool2</artifactId>
+			<version>${commons.pool2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>${javassist.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.sgroschupf</groupId>
+            <artifactId>zkclient</artifactId>
+            <version>${zkclient.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>${netty.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mapdb</groupId>
+            <artifactId>mapdb</artifactId>
+            <version>${mapdb.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.version}</version>
+        </dependency>
+	</dependencies>
+
+</project>
